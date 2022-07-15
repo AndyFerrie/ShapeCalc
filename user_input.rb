@@ -48,7 +48,7 @@ elsif shape == :triangle
         while shape_calc.check_positive(height) == false do
         height = gets.chomp.to_f
         end 
-        
+
     puts "The area of the triangle is #{shape_calc.area(shape, base, height)}"
 else
     puts "Invalid shape"
