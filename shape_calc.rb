@@ -3,11 +3,11 @@ class ShapeCalc
     def area(shape, *args)
         case shape
         when :circle
-            Math::PI * args[0] ** 2.0
+            (Math::PI * args[0] ** 2.0).round(2)
         when :rectangle
-            args[0] * args[1]
+            (args[0] * args[1]).round(2)
         when :triangle
-            args[0] * args[1] / 2.0
+            (args[0] * args[1] / 2.0).round(2)
         end
     end
 
